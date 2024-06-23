@@ -18,18 +18,20 @@
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
     
-        <meta name="description" content="src打点">
+        <meta name="description" content="备忘录">
 <meta property="og:type" content="article">
 <meta property="og:title" content="信息收集">
 <meta property="og:url" content="http://example.com/2024/06/20/%E6%89%93%E7%82%B9/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="src打点">
+<meta property="og:description" content="备忘录">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://example.com/images/xxsj.png">
 <meta property="article:published_time" content="2024-06-20T15:48:13.000Z">
-<meta property="article:modified_time" content="2024-06-22T13:43:30.051Z">
+<meta property="article:modified_time" content="2024-06-23T08:40:09.934Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="都说人总是为年少不可得之物而困其一生">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/images/xxsj.png">
     
     
     <!--- Icon Part-->
@@ -405,7 +407,7 @@
         <div class="label text-third-text-color text-sm">Categories</div>
     </a>
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/archives">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">6</div>
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">7</div>
         <div class="label text-third-text-color text-sm">Posts</div>
     </a>
 </div>
@@ -461,8 +463,8 @@
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2024-06-22 21:43:30</span>
-            <span class="mobile">2024-06-22 21:43:30</span>
+            <span class="desktop">2024-06-23 16:40:09</span>
+            <span class="mobile">2024-06-23 16:40:09</span>
             <span class="hover-info">Updated</span>
         </span>
     
@@ -532,10 +534,27 @@
 
 
 
-<h5 id="黑暗引擎"><a href="#黑暗引擎" class="headerlink" title="黑暗引擎"></a>黑暗引擎</h5><p>shodan</p>
+<h5 id="whois查询"><a href="#whois查询" class="headerlink" title="whois查询"></a>whois查询</h5><p>比如我的域名mengxing.fyi</p>
+<p>域名是在name.com购买，dns由cloudflare解析，域名状态为受到保护，不能随便转移</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">域名 mengxing.fyi 的 WHOIS 记录提供了以下信息：</span><br><span class="line"></span><br><span class="line">域名: mengxing.fyi</span><br><span class="line">注册商: Name.com, Inc.</span><br><span class="line">注册商 WHOIS 服务器: whois.name.com</span><br><span class="line">注册商网址: name.com</span><br><span class="line">更新时间: 2024-06-22</span><br><span class="line">创建时间: 2024-06-21</span><br><span class="line">注册有效期: 2025-06-21</span><br><span class="line">注册商滥用联系邮箱: abuse@name.com</span><br><span class="line">注册商滥用联系电话: +1.7203101849</span><br><span class="line">域名状态: clientTransferProhibited (https://icann.org/epp#clientTransferProhibited), addPeriod (https://icann.org/epp#addPeriod)</span><br><span class="line">名称服务器: yevgen.ns.cloudflare.com, ainsley.ns.cloudflare.com</span><br><span class="line">DNSSEC: 未签名</span><br><span class="line">由于隐私保护，注册人的信息被隐藏。这在域名注册中是常见的做法，以保护个人信息。要联系注册人，您需要通过注册商 Name.com 的 RDDS 服务查询更多详细信息。</span><br></pre></td></tr></table></figure></div>
+
+
+
+<h5 id="nslookup-windows命令"><a href="#nslookup-windows命令" class="headerlink" title="nslookup windows命令"></a>nslookup windows命令</h5><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">nslookup testphp.vulnweb.com       -d 列出所有记录       </span><br><span class="line"></span><br><span class="line">Server: 表示用于查询的DNS服务器名称（这里是 public1.114dns.com）</span><br><span class="line">Address: DNS服务器的IP地址（这里是 114.114.114.114）</span><br><span class="line">Non-authoritative answer: 表示这是非权威答案，即此信息可能来自缓存而不是权威DNS服务器</span><br><span class="line">Name: 查询的域名（这里是 testphp.vulnweb.com）</span><br><span class="line">Address: 解析得到的IP地址（这里是 44.228.249.3）</span><br></pre></td></tr></table></figure></div>
+
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/images/xxsj.png"
+                      alt="xxsj"
+                ></p>
+<h5 id="黑暗引擎"><a href="#黑暗引擎" class="headerlink" title="黑暗引擎"></a>黑暗引擎</h5><p>fofa</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">host=&quot;gzu.edu.cn&quot; &amp;&amp; status_code=&quot;200&quot;                      状态为200</span><br><span class="line">after=&quot;2017-01-01&quot; &amp;&amp; before=&quot;2017-10-01&quot;                   时间</span><br><span class="line">host=&quot;gzu.edu.cn&quot; &amp;&amp; status_code=&quot;200&quot; &amp;&amp; after=&quot;2020-01-01&quot; &amp;&amp; before=&quot;2024-6-01&quot;</span><br><span class="line">icp=&quot;京ICP证030173号&quot;</span><br><span class="line">ip=&quot;1.1.1.1&quot;</span><br><span class="line">icon_hash=&quot;11111111555&quot;</span><br><span class="line">ip=”1.1.1.1/24”                                             c段资产</span><br></pre></td></tr></table></figure></div>
+
+
+
+<p>shodan</p>
 <div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssl:&quot;baidu.com&quot; 200</span><br></pre></td></tr></table></figure></div>
-
-
 
 
 
@@ -568,7 +587,7 @@
 
 
 
-<h5 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h5><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">爬取</span><br><span class="line">katana -u https://hqbz.gufe.edu.cn</span><br><span class="line">katana -list url_list.txt</span><br><span class="line">cat domains | httpx | katana</span><br><span class="line">js扫描</span><br><span class="line">echo www.viator.com | katana -ps | grep -E &quot;\.js$&quot; | nuclei -t /home/coffinxp/nuclei-templates/http/exposures/ -c 30</span><br><span class="line"></span><br><span class="line">paramspider -l li.txt              自动保存在results文件夹下</span><br><span class="line"></span><br><span class="line">photon工具 </span><br><span class="line">python photon.py -u https://www.baidu.com/ --keys -o /root/Desktop/eh0</span><br><span class="line">提取url</span><br><span class="line">cat urls.txt | cut -d &quot;/&quot; -f3 | sort | uniq &gt; endpoints.txt</span><br></pre></td></tr></table></figure></div>
+<h5 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h5><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">爬取</span><br><span class="line">katana -u https://www.csmu.edu.tw</span><br><span class="line">katana -list url_list.txt</span><br><span class="line">cat domains | httpx | katana</span><br><span class="line">js扫描</span><br><span class="line">echo www.viator.com | katana -ps | grep -E &quot;\.js$&quot; | nuclei -t /home/coffinxp/nuclei-templates/http/exposures/ -c 30</span><br><span class="line"></span><br><span class="line">paramspider -l li.txt              自动保存在results文件夹下</span><br><span class="line"></span><br><span class="line">photon工具 </span><br><span class="line">python photon.py -u https://www.baidu.com/ --keys -o /root/Desktop/eh0</span><br><span class="line">提取url</span><br><span class="line">cat urls.txt | cut -d &quot;/&quot; -f3 | sort | uniq &gt; endpoints.txt</span><br></pre></td></tr></table></figure></div>
 
 
 
@@ -596,7 +615,7 @@
 
 
 
-<h5 id="js"><a href="#js" class="headerlink" title="js"></a>js</h5><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">katana -u https://www.gznu.edu.cn/ -jc -d 2 | grep &quot;.js$&quot; | uniq | sort &gt; test.txt</span><br><span class="line"></span><br><span class="line">cat test.txt | while read url;do python3 SecretFinder/SecretFinder.py -i $url  -o cli  &gt;&gt;secret.txt;done</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure></div>
+<h5 id="js"><a href="#js" class="headerlink" title="js"></a>js</h5><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">katana -u https://www.csmu.edu.tw/ -jc -d 2 | grep &quot;.js$&quot; | uniq | sort &gt; test.txt</span><br><span class="line"></span><br><span class="line">cat test.txt | while read url;do python3 SecretFinder/SecretFinder.py -i $url  -o cli  &gt;&gt;secret.txt;done</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure></div>
 
 
         </div>
@@ -695,7 +714,7 @@
                 
                 <p class="post-count space-x-0.5">
                     <span>
-                        6 posts in total
+                        7 posts in total
                     </span>
                     
                 </p>
