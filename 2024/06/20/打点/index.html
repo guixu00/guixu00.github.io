@@ -26,8 +26,9 @@
 <meta property="og:description" content="备忘录">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://example.com/images/xxsj.png">
+<meta property="og:image" content="http://example.com/images/zc.png">
 <meta property="article:published_time" content="2024-06-20T15:48:13.000Z">
-<meta property="article:modified_time" content="2024-06-23T08:40:09.934Z">
+<meta property="article:modified_time" content="2024-06-23T15:22:38.948Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="都说人总是为年少不可得之物而困其一生">
 <meta name="twitter:card" content="summary">
@@ -463,8 +464,8 @@
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2024-06-23 16:40:09</span>
-            <span class="mobile">2024-06-23 16:40:09</span>
+            <span class="desktop">2024-06-23 23:22:38</span>
+            <span class="mobile">2024-06-23 23:22:38</span>
             <span class="hover-info">Updated</span>
         </span>
     
@@ -534,7 +535,12 @@
 
 
 
-<h5 id="whois查询"><a href="#whois查询" class="headerlink" title="whois查询"></a>whois查询</h5><p>比如我的域名mengxing.fyi</p>
+<h5 id="whois查询"><a href="#whois查询" class="headerlink" title="whois查询"></a>whois查询</h5><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">whois.domaintools.com                     网站</span><br></pre></td></tr></table></figure></div>
+
+<p>或者命令行 </p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">whois baidu.com</span><br></pre></td></tr></table></figure></div>
+
+<p>比如我的域名mengxing.fyi</p>
 <p>域名是在name.com购买，dns由cloudflare解析，域名状态为受到保护，不能随便转移</p>
 <div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">域名 mengxing.fyi 的 WHOIS 记录提供了以下信息：</span><br><span class="line"></span><br><span class="line">域名: mengxing.fyi</span><br><span class="line">注册商: Name.com, Inc.</span><br><span class="line">注册商 WHOIS 服务器: whois.name.com</span><br><span class="line">注册商网址: name.com</span><br><span class="line">更新时间: 2024-06-22</span><br><span class="line">创建时间: 2024-06-21</span><br><span class="line">注册有效期: 2025-06-21</span><br><span class="line">注册商滥用联系邮箱: abuse@name.com</span><br><span class="line">注册商滥用联系电话: +1.7203101849</span><br><span class="line">域名状态: clientTransferProhibited (https://icann.org/epp#clientTransferProhibited), addPeriod (https://icann.org/epp#addPeriod)</span><br><span class="line">名称服务器: yevgen.ns.cloudflare.com, ainsley.ns.cloudflare.com</span><br><span class="line">DNSSEC: 未签名</span><br><span class="line">由于隐私保护，注册人的信息被隐藏。这在域名注册中是常见的做法，以保护个人信息。要联系注册人，您需要通过注册商 Name.com 的 RDDS 服务查询更多详细信息。</span><br></pre></td></tr></table></figure></div>
 
@@ -548,20 +554,41 @@
                      data-src="/images/xxsj.png"
                       alt="xxsj"
                 ></p>
+<h5 id="网站信息查找"><a href="#网站信息查找" class="headerlink" title="网站信息查找"></a>网站信息查找</h5><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">whatweb testphp.vulnweb.com                 命令</span><br><span class="line">Wappalyzer                                  浏览器插件</span><br></pre></td></tr></table></figure></div>
+
+
+
+<h5 id="防火墙测试"><a href="#防火墙测试" class="headerlink" title="防火墙测试"></a>防火墙测试</h5><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wafw00f testphp.vulnweb.com</span><br></pre></td></tr></table></figure></div>
+
+
+
+<h5 id="theHarvester-需要太多api"><a href="#theHarvester-需要太多api" class="headerlink" title="theHarvester   需要太多api"></a>theHarvester   需要太多api</h5><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python3 theHarvester.py -d baidu.com -b bing,yahoo,baidu </span><br></pre></td></tr></table></figure></div>
+
+
+
+<h5 id="recon-ng-似msf"><a href="#recon-ng-似msf" class="headerlink" title="recon-ng     似msf"></a>recon-ng     似msf</h5><h5 id="Maltego-有社区版"><a href="#Maltego-有社区版" class="headerlink" title="Maltego       有社区版"></a>Maltego       有社区版</h5><h5 id="pentest-tools-在线黑客工具"><a href="#pentest-tools-在线黑客工具" class="headerlink" title="pentest-tools 在线黑客工具"></a>pentest-tools 在线黑客工具</h5><p>有谷歌语法模板，但是全英文好像对中国没用</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://pentest-tools.com/</span><br></pre></td></tr></table></figure></div>
+
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/images/zc.png"
+                      alt="zc.png"
+                ></p>
 <h5 id="黑暗引擎"><a href="#黑暗引擎" class="headerlink" title="黑暗引擎"></a>黑暗引擎</h5><p>fofa</p>
 <div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">host=&quot;gzu.edu.cn&quot; &amp;&amp; status_code=&quot;200&quot;                      状态为200</span><br><span class="line">after=&quot;2017-01-01&quot; &amp;&amp; before=&quot;2017-10-01&quot;                   时间</span><br><span class="line">host=&quot;gzu.edu.cn&quot; &amp;&amp; status_code=&quot;200&quot; &amp;&amp; after=&quot;2020-01-01&quot; &amp;&amp; before=&quot;2024-6-01&quot;</span><br><span class="line">icp=&quot;京ICP证030173号&quot;</span><br><span class="line">ip=&quot;1.1.1.1&quot;</span><br><span class="line">icon_hash=&quot;11111111555&quot;</span><br><span class="line">ip=”1.1.1.1/24”                                             c段资产</span><br></pre></td></tr></table></figure></div>
 
 
 
 <p>shodan</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssl:&quot;baidu.com&quot; 200</span><br></pre></td></tr></table></figure></div>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssl:&quot;testphp.vulnweb.com&quot; 200</span><br></pre></td></tr></table></figure></div>
 
 
 
-<h5 id="子域名收集"><a href="#子域名收集" class="headerlink" title="子域名收集"></a>子域名收集</h5><p>subfinder</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">subfinder list url.txt&gt;sub.txt</span><br></pre></td></tr></table></figure></div>
+<h5 id="子域名收集"><a href="#子域名收集" class="headerlink" title="子域名收集"></a>子域名收集</h5><p>subfinder、sublist3r、oneforall</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">subfinder list url.txt&gt;sub.txt</span><br><span class="line">subfinder -d testphp.vulnweb.com -o Subs.txt</span><br></pre></td></tr></table></figure></div>
 
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">subfinder -d baidu.com -o Subs.txt</span><br></pre></td></tr></table></figure></div>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sublist3r -v -d testphp.vulnweb.com -p 80,443</span><br></pre></td></tr></table></figure></div>
 
 
 
@@ -569,25 +596,48 @@
 
 <h5 id="存活探测"><a href="#存活探测" class="headerlink" title="存活探测"></a>存活探测</h5><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat sub.txt | httpx-toolkit -ports 443,80,8080,8888 -threads 200 -mc 200 -o aaa.txt </span><br></pre></td></tr></table></figure></div>
 
-<h4 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h4><p>Web-SurvivalScan</p>
+<h4 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h4><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Web-SurvivalScan                                            </span><br></pre></td></tr></table></figure></div>
+
 <div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://gitee.com/ma-fanxiang/fast-see</span><br></pre></td></tr></table></figure></div>
 
 
 
-<p>时光回溯</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat sbu.txt | waybackurls | tee urls.txt</span><br></pre></td></tr></table></figure></div>
+<h4 id="js查找"><a href="#js查找" class="headerlink" title="js查找"></a>js查找</h4><p>gau、subjs、linkfinder、waybackurls、katana</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">https://github.com/lc/gau</span><br><span class="line">https://github.com/lc/subjs</span><br><span class="line">https://github.com/GerbenJavado/LinkFinder</span><br></pre></td></tr></table></figure></div>
+
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat url.txt | gau | subjs                     gau从域名提取url,subjs提取js</span><br></pre></td></tr></table></figure></div>
+
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat url.txt | waybackurls | subjs             waybackurls国内网站抓取得少  先看看有没有抓取</span><br></pre></td></tr></table></figure></div>
+
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat sbu.txt | waybackurls | tee urls.txt       时光回溯</span><br></pre></td></tr></table></figure></div>
 
 
+
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">katana -u https://www.csmu.edu.tw/ -jc -d 2 | grep &quot;.js$&quot; | uniq | sort &gt; test.txt</span><br><span class="line"></span><br><span class="line">cat test.txt | while read url;do python3 SecretFinder/SecretFinder.py -i $url  -o cli  &gt;&gt;secret.txt;done</span><br></pre></td></tr></table></figure></div>
+
+
+
+<h5 id="Trufflehog-信息泄露插件"><a href="#Trufflehog-信息泄露插件" class="headerlink" title="Trufflehog   信息泄露插件"></a>Trufflehog   信息泄露插件</h5><h5 id="apikey验证"><a href="#apikey验证" class="headerlink" title="apikey验证"></a>apikey验证</h5><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://github.com/streaak/keyhacks</span><br></pre></td></tr></table></figure></div>
+
+
+
+<h5 id="证书查找ip"><a href="#证书查找ip" class="headerlink" title="证书查找ip"></a>证书查找ip</h5><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://github.com/projectdiscovery/uncover</span><br></pre></td></tr></table></figure></div>
+
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo &#x27;ssl:&quot;Uber Technologies, Inc.&quot;&#x27; | uncover </span><br></pre></td></tr></table></figure></div>
+
+
+
+<h5 id="用户名枚举github仓库"><a href="#用户名枚举github仓库" class="headerlink" title="用户名枚举github仓库"></a>用户名枚举github仓库</h5><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://github.com/trickest/enumerepo</span><br></pre></td></tr></table></figure></div>
 
 
 
 <h5 id="目录扫描"><a href="#目录扫描" class="headerlink" title="目录扫描"></a>目录扫描</h5><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">feroxbuster -u https://www.csmu.edu.tw/ -s 200 301 403 -n </span><br></pre></td></tr></table></figure></div>
 
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">dirsearch -u https://baidu.com/ -w /root/Desktop/endpoints.txt -i 200,301,302</span><br><span class="line">dirsearch -l gzgy.txt -x -t 50 -x 302,400-520 --exclude-text=html,js,json</span><br><span class="line">dirsearch -l gzcj.txt -t 50 -x 500,502,404,401,400 -r 2 </span><br></pre></td></tr></table></figure></div>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">dirsearch -u https://testphp.vulnweb.com/ -i 200,301,302</span><br><span class="line">dirsearch -l gzgy.txt -x -t 50 -x 302,400-520 --exclude-text=html,js,json         去除js.html.json 不好使</span><br><span class="line">dirsearch -l gzcj.txt -t 50 -x 500,502,404,401,400 -r 2                           递归扫描</span><br></pre></td></tr></table></figure></div>
 
 
 
-<h5 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h5><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">爬取</span><br><span class="line">katana -u https://www.csmu.edu.tw</span><br><span class="line">katana -list url_list.txt</span><br><span class="line">cat domains | httpx | katana</span><br><span class="line">js扫描</span><br><span class="line">echo www.viator.com | katana -ps | grep -E &quot;\.js$&quot; | nuclei -t /home/coffinxp/nuclei-templates/http/exposures/ -c 30</span><br><span class="line"></span><br><span class="line">paramspider -l li.txt              自动保存在results文件夹下</span><br><span class="line"></span><br><span class="line">photon工具 </span><br><span class="line">python photon.py -u https://www.baidu.com/ --keys -o /root/Desktop/eh0</span><br><span class="line">提取url</span><br><span class="line">cat urls.txt | cut -d &quot;/&quot; -f3 | sort | uniq &gt; endpoints.txt</span><br></pre></td></tr></table></figure></div>
+<h5 id="武士刀"><a href="#武士刀" class="headerlink" title="武士刀.."></a>武士刀..</h5><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">爬取</span><br><span class="line">katana -u https://www.csmu.edu.tw</span><br><span class="line">katana -list url_list.txt</span><br><span class="line">cat domains | httpx | katana</span><br><span class="line">js扫描</span><br><span class="line">echo www.viator.com | katana -ps | grep -E &quot;\.js$&quot; | nuclei -t /home/coffinxp/nuclei-templates/http/exposures/ -c 30</span><br><span class="line"></span><br><span class="line">paramspider -l li.txt              自动保存在results文件夹下</span><br><span class="line"></span><br><span class="line">photon工具 </span><br><span class="line">python photon.py -u https://www.baidu.com/ --keys -o /root/Desktop/eh0</span><br><span class="line">提取url</span><br><span class="line">cat urls.txt | cut -d &quot;/&quot; -f3 | sort | uniq &gt; endpoints.txt</span><br></pre></td></tr></table></figure></div>
 
 
 
@@ -614,8 +664,6 @@
 <h5 id="sql注入"><a href="#sql注入" class="headerlink" title="sql注入"></a>sql注入</h5><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">## sqlmap </span><br><span class="line">echo &quot;url&quot; | gau | gf sqli | tee sql.txt</span><br><span class="line"></span><br><span class="line">sqlmap -m /root/Deskttop/sqli.txt --dbs --batch --random-agent</span><br></pre></td></tr></table></figure></div>
 
 
-
-<h5 id="js"><a href="#js" class="headerlink" title="js"></a>js</h5><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">katana -u https://www.csmu.edu.tw/ -jc -d 2 | grep &quot;.js$&quot; | uniq | sort &gt; test.txt</span><br><span class="line"></span><br><span class="line">cat test.txt | while read url;do python3 SecretFinder/SecretFinder.py -i $url  -o cli  &gt;&gt;secret.txt;done</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure></div>
 
 
         </div>
